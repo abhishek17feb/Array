@@ -1,5 +1,7 @@
 package com.abhishek.array;
 
+import java.util.Vector;
+
 import com.abhishek.array.impl.Array;
 
 public class ArrayDemo {
@@ -14,5 +16,6 @@ public class ArrayDemo {
 		list.add(10);
 		list.lastIndexOf(5);
 		System.out.println(list.get(1));
+		
 	}
 }
