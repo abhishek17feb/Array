@@ -54,4 +54,22 @@ public class Array {
 		}
 		System.out.println("Item not present");
 	}
+	
+	public void lastIndexOf( int value ) {
+		
+		int lastIndex = 0;
+		boolean itemFound = false;
+		for( int i=0;i<count;i++ ) {
+			if( value == items[i] ) {
+				lastIndex=i;
+				itemFound = true;
+			}
+		}
+		
+		if( itemFound ) {
+			System.out.println("Last index of ["+value+"] is ["+ lastIndex +"]");
+		} else {
+			System.out.println("Item not found");
+		}
+	}
 }

@@ -10,6 +10,8 @@ public class ArrayDemo {
 		list.add(0);
 		list.add(5);
 		list.add(10);
-		list.indexOf(10);
+		list.add(10);
+		list.add(10);
+		list.lastIndexOf(5);
 	}
 }
