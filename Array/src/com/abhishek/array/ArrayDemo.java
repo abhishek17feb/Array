@@ -13,5 +13,6 @@ public class ArrayDemo {
 		list.add(10);
 		list.add(10);
 		list.lastIndexOf(5);
+		System.out.println(list.get(1));
 	}
 }

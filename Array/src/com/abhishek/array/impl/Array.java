@@ -72,4 +72,8 @@ public class Array {
 			System.out.println("Item not found");
 		}
 	}
+	
+	public int get(int index) {
+		return items[index];
+	}
 }
