@@ -33,4 +33,25 @@ public class Array {
 			System.out.println(items[i]);
 		}
 	}
+	
+	public void remove(int index) {
+		
+		for( int i = index ; i<count ;i++ ) {
+			if( items[i+1] != 0 )
+			items[i] = items[i+1];
+		}
+		
+		count--;
+	}
+	
+	public void indexOf(int value) {
+		
+		for( int i = 0 ;i <count ; i++ ) {
+			if( value == items[i] ) {
+				System.out.println("Index of "+ value + " is  " + i);
+				return;
+			}
+		}
+		System.out.println("Item not present");
+	}
 }

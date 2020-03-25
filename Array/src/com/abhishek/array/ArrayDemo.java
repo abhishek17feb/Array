@@ -8,9 +8,8 @@ public class ArrayDemo {
 		
 		Array list = new Array(2);
 		list.add(0);
-		list.add(1);
-		list.add(2);
-		list.print();
-		
+		list.add(5);
+		list.add(10);
+		list.indexOf(10);
 	}
 }
