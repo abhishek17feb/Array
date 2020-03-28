@@ -6,6 +6,8 @@ public class SimpleArrayStackImpl implements Stack{
 	
 	private int numberOfItems;
 	
+	private int maxElement;
+	
 	private int[] items = new int[10];
 	
 	@Override
@@ -13,6 +15,10 @@ public class SimpleArrayStackImpl implements Stack{
 		
 		if( items.length == numberOfItems ) {
 			throw new StackOverflowError("Cannot add more than this");
+		}
+		
+		if( item > items[lastInsertedIndex] ) {
+			maxElement = item;
 		}
 		
 		items[++lastInsertedIndex] = item;
@@ -40,5 +46,11 @@ public class SimpleArrayStackImpl implements Stack{
 		for( int i =0 ; i<=lastInsertedIndex; i++ ) {
 			System.out.println(items[i]);
 		}
+	}
+
+	@Override
+	public void maxElement() {
+		
+		
 	}
 }

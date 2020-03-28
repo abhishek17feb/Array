@@ -8,4 +8,6 @@ public interface Stack {
 	
 	void print();
 	
+	void maxElement();
+	
 }
